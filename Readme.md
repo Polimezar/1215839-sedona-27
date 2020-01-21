@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Валентина Бобух](https://up.htmlacademy.ru/htmlcss/27/user/1215839).
-* Наставник: `Ирина Малиновская`(https://htmlacademy.ru/profile/irina-malinovskaya).
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
