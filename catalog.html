@@ -8,7 +8,7 @@
      <div>
        <header>
          <nav>
-           <a>
+           <a href="index.html">
              <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
            </a>
            <ul>
@@ -21,50 +21,56 @@
        </header>
        <main>
          <section>
-           <div>
+          <form class="filter" method="get"
+          action="#">
+           <div >
              <h2>инфраструктура:</h2>
-              <ul>
-               <li>бассейн</li>
-               <li>парковка</li>
-               <li>wi-fi</li>
-              </ul>
+              <input type="checkbox" name="pool" id="filter-pool" checked>
+              <label for="filter-pool"> бассейн </label><br>
+              <input type="checkbox" name="parking" id="filter-parking" >
+              <label for="filter-parking"> парковка </label><br>
+              <input type="checkbox" name="wi-fi" id="filter-wi-fi" >
+              <label for="filter-wi-fi"> wi-fi </label><br>
            </div>
            <div>
-             <h2>тип жилья:</h2> 
+             <h2>тип жилья:</h2>
+              <input type="checkbox" name="hotel" id="filter-hotel" checked>
+              <label for="filter-hotel">гостиница</label><br>
+              <input type="checkbox" name="motel" id="filter-motel" checked>
+              <label for="filter-motel">мотель</label><br>
+              <input type="checkbox" name="apartments" id="filter-apartmens" checked>
+              <label for="filter-apartments"> апартаменты</label><br>
+            </div>
+            <div>
+              <h3>стоимость в сутки (р);</h3>
+              <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
+              <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
+              <input type="range" min="0" max="3000">
+              <button class="button" value="Показать" >показать</button>
+            </div>
+          </form>
+          </section>
+          <section>
+            <div>
+              <span>Найдено: 3</span>
+            </div>
+            <div>
+              <span>Сортировка:</span>
               <ul>
-                <li>гостиница</li>
-                <li>мотель</li>
-               <li>апартаменты</li>
-              </ul>
-             </div>
-             <div>
-               <h3>стоимость в сутки (р);</h3>
-               <span>от 0</span> 
-               <span>до 3000</span>
-               <button>показать</button>
-              </div>
-           </section>
-           <section>
-             <div>
-               <span>Найдено: 3</span>
-             </div>
-             <div>
-               <span>Сортировка:</span>
-               <ul>
-                 <li>по цене</li>
-                 <li> по типу</li>
-                 <li> по рейтингу</li>
-               </ul>
-              </div>
-              <div>
-                <a href="#"> </a>
-                <a href="#"> </a>
-              </div>
-            </section>
+               <li> <a href="#">по цене</a></li>
+               <li> <a href="#">по типу</a></li>
+               <li> <a href="#">по рейтингу</a></li>
+             </ul>
+            </div>
+            <div>
+              <a href="#"> </a>
+              <a href="#"> </a>
+            </div>
+          </section>
           <ul>
             <li>
              <div>
-               <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона"> 
+               <img src="img/logo.png" width="138" height="70" alt="Седона"> 
              </div>
              <div>
                <h2>AMARA RESORT & SPA</h2>
@@ -86,7 +92,7 @@
              </li>
             <li>
              <div> 
-                <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
+                <img src="img/logo.png" width="138" height="70" alt="Седона">
              </div>
              <div>
                <h2> DESERT QUAIL INN</h2>
@@ -105,7 +111,7 @@
              </li>
             <li>
              <div>
-               <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
+               <img src="img/logo.png" width="138" height="70" alt="Седона">
              </div>  
              <div>
                <h2>VILLAS AT POCO DIABLO</h2>
