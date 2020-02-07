@@ -1,0 +1,294 @@
+body {
+    margin: 40px;
+    padding: 0;
+  
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    width: 1280px;
+    height: 2462px;
+    background-color: #f2f2f2;
+    background-image: url(../img/background-photo.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ .navigation {
+    font-size: 14px;
+    line-height: 26px;
+    align-content: center;
+    color: #000000;
+    width: 1200px;
+    height: 56px;
+    margin-left: 35px;
+    position: absolute;
+    top: 0;
+
+    background-color: #ffffff 
+ } 
+
+ .navigation-list{
+    list-style: none;
+  }
+
+ .navigation-list a {
+    color: #000000;
+  }
+
+ .navigation-list a:hover,
+ .navigation-list a:focus {
+    color: #81b3d2;
+ }
+
+ .header-logo  {
+    position:absolute;
+    top:0;
+    left:50%;
+    margin-left:-69px
+    }
+
+ .welcome-block .welcome{
+    display: block;
+    margin: auto;
+    padding-top: 120px;
+ }
+
+ .polygon{
+    width: 1203px;
+    height: 59px;
+    object-fit: contain;
+    display: block;
+    margin-left: 34px; 
+ }
+
+ .description-main {
+    width: 1200px;
+    height: 216px;
+    display: block;
+    margin-left: 35px;
+    float: left;
+    background-color: #ffffff;
+ }
+
+ .description-main h1 {
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+ }
+
+ .description-main p {
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 26 px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+ }
+
+ .description {
+    margin-left: 35px;
+    width: 400px;
+    height: 256px;
+    display: inline-flex;
+    float: left;
+    background-color: #81b3d2
+ }
+
+ .description .description-info {
+    width: 280px;
+    height: 146px;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21px;
+    letter-spacing: normal;
+    text-align: center;
+    padding-top: 34px;
+    padding-left: 60px;
+    padding-bottom: 64px;
+    padding-right: 60px ;
+    color: #ffffff; 
+ }
+
+ .description .picture-1 {
+    width: 801px;
+    height: 256px;
+    display: inline-flex;
+    margin-left: 158px;
+ }
+ 
+ .description-2 {
+    display: flex;
+    text-align: center;
+    width: 1200px;
+    margin-left: 36px;
+    padding: 0;
+    background-color: #ffffff;
+ }
+
+ .description-2 h2 {
+    font-size: 21px;
+    line-height: 21px;
+    text-emphasis: center;
+ }
+
+ .description-2 p {
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 21 px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+ }
+
+ .description-3 {
+    margin-right: 35px;
+    width: 400px;
+    height: 256px;
+    display: inline-flex;
+    float: right;
+    background-color: #81b3d2
+ }
+
+ .description-3 .advantage-description-4 {
+    width: 303px;
+    height: 142px;
+    font-family: PTSans;
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+ }
+
+ .description-3 h2 {
+    font-size: 21px;
+    font-weight: bold;
+ }
+
+ .description-3 .picture-2 {
+    width: 801px;
+    height: 256px;
+    display: inline-flex;
+    
+ }
+ .description-4 {
+    display: flex;
+    text-align: center;
+    width: 1200px;
+    margin-left: 36px;
+    padding: 0;
+    background-color: #eeeeee;
+ }
+ .advantage-description-5,
+ .advantage-description-6,
+ .advantage-description-7 {
+    width: 400px;
+    height: 256px;
+    font-size: 14px;
+    font-family: "PT Sans";
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: center;
+    color: #333333;
+ }
+ .search-hotel {
+    width: 1200px;
+    height: 280px;
+    display: flex;
+    margin-left: 36px;
+    align-content: center;
+    background-color: #ffffff;
+ }
+  .search-hotel .search-hotel-text {
+    width: 434px;
+    height: 96px;
+    font-family: "PT Sans";
+    font-size: 14px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: var(--black);
+    padding-left: 383px;
+ }
+ 
+ .search-hotel-text h3{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    color: #000000;
+ }
+
+ .brown-button p{
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+ }
+
+ .search {
+    width: 289px;
+    height: 18px;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.24;
+    letter-spacing: normal;
+    text-align: center;
+    
+    color: #ffffff;
+ }
+
+  .brown-button :focus,
+  .brown-button :hover {
+    background-color:  #604e43;
+  }
+ 
+ .map {
+    display: block;
+    margin: auto;
+    width: 1200px;
+    height: 593px;
+    margin-left: 34px;
+ }
+ .page-footer{
+    display: inline-flex;
+    margin: auto;
+    width: 1200px;
+    height: 120px;
+    margin-left: 34px;
+    background-color: #ffffff;
+ }
+
+ .page-footer a{
+    color: black;
+ }   
