@@ -275,7 +275,7 @@ body {
     color: black;
  }  
 
- .main-content .filter-hotels{
+ .container .filter-hotels{
     width: 1200px;
     height: 540px;
     display: flex;
@@ -283,7 +283,7 @@ body {
     background-image: url(../img/filter-background.jpg);
  }
  
- .main-content ul {
+ .container ul {
    list-style: none;
  }
 
