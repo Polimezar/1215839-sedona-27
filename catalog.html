@@ -22,39 +22,43 @@
           </ul>
         </nav>
       </header>
-      <form class="filter" method="get" action="#">
         <section class="filter-hotels">
+          <form class="filter" method="get" action="#">
            <div class="infrastructure">
-             <h2>инфраструктура:</h2>
-             <input class="checkbox-on" type="checkbox" name="pool" id="filter-pool" checked>
-              <label class="pool" for="filter-pool"> бассейн </label><br>
-             <input class="checkbox" type="checkbox" name="parking" id="filter-parking" >
-             <label class="parking" for="filter-parking"> парковка </label><br>
-             <input class="checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" >
-             <label class="wi-fi" for="filter-wi-fi"> wi-fi </label><br>
+             <fieldset>
+                <legend>инфраструктура:</legend>
+               <input class="checkbox-on" type="checkbox" name="pool" id="filter-pool" checked>
+               <label class="pool" for="filter-pool"> бассейн </label><br>
+               <input class="checkbox" type="checkbox" name="parking" id="filter-parking" >
+               <label class="parking" for="filter-parking"> парковка </label><br>
+               <input class="checkbox" type="checkbox" name="wi-fi" id="filter-wi-fi" >
+               <label class="wi-fi" for="filter-wi-fi"> wi-fi </label><br>
+             </fieldset>
            </div>
            <div class="housing">
-             <h2>тип жилья:</h2>
-             <input class="checkbox-on" type="checkbox" name="hotel" id="filter-hotel" checked>
-             <label class="hotel" for="filter-hotel">гостиница</label><br>
-             <input class="checkbox-on" type="checkbox" name="motel" id="filter-motel" checked>
-             <label class="motel" for="filter-motel">мотель</label><br>
-             <input class="checkbox-on" type="checkbox" name="apartments" id="filter-apartmens" checked>
-             <label class="apartments" for="filter-apartments"> апартаменты</label><br>
-           </div>
+             <fieldset>
+               <legend>тип жилья:</legend>
+               <input class="checkbox-on" type="checkbox" name="hotel" id="filter-hotel" checked>
+               <label class="hotel" for="filter-hotel">гостиница</label><br>
+               <input class="checkbox-on" type="checkbox" name="motel" id="filter-motel" checked>
+               <label class="motel" for="filter-motel">мотель</label><br>
+               <input class="checkbox-on" type="checkbox" name="apartments" id="filter-apartmens" checked>
+               <label class="apartments" for="filter-apartments"> апартаменты</label><br>
+              </fieldset>
+            </div>
            <div class="price">
-             <h3>стоимость в сутки (р);</h3>
-             <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
-             <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
-             <input type="range" min="0" max="3000">
-             <button class="button" value="Показать" >показать</button>
-           </div>
+             <fieldset>
+               <h3>стоимость в сутки (р);</h3>
+               <label class="cost-from">От <input type="text" name="from" value="0" id="from-value"></label>
+               <label class="cost-to">До <input type="text" name="to" value="3000" id="to-value"></label>
+               <input type="range" min="0" max="3000">
+               <button class="button" value="Показать" >показать</button>
+              </fieldset>
+            </div>
+          </form>
         </section>
-      </form>
       <section class="search-results">
-        <div class="results">
-          <span>Найдено: 3</span>
-        </div>
+        <h3 class="found">Найдено: 3</h3 class="">
         <div class="sorting">
           <span>Сортировка:</span>
           <ul>
@@ -64,8 +68,8 @@
           </ul>
         </div>
         <div >
-          <button class="icon-up-dir" type="button" name="icon-up-dir"></button > 
-           <button class="icon-down-dir" type="button" name="icon-down-dir"></button>
+          <a class="icon-up-dir" type="button" name="icon-up-dir"></a > 
+          <a class="icon-down-dir" type="button" name="icon-down-dir"></a>
        </div>
       </section>
       <ul class="result-list">
@@ -131,8 +135,10 @@
         </li>
         </ul>
        <footer class="page-footer">
-        <p class="hashtag">#Visitsedona</p>
-        <a href="#">тел:+7(495)666-02-66</a>
+        <div class="communication">
+          <p class="hashtag">#Visitsedona</p>
+          <a class="numder" href="#">тел:+7(495)666-02-66</a>
+       </div> 
         <ul class="socials">
           <a href="#"> <img src="img/twitter.svg" width="17" height="15" alt="" /> Твиттер</a>
           <a href="#"> <img src="img/fb-icon.svg" width="12" height="22"  alt=""/> Фейсбук</a>
