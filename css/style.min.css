@@ -1,9 +1,10 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'PT Sans', Arial, sans-serif;
     font-size: 14px;
     line-height: 24px;
+    text-transform: uppercase;
     font-weight: 700;
     color: #000000;
 
@@ -30,7 +31,8 @@ body {
 
  .navigation-list{
     list-style: none;
-  }
+    display: flex;
+ }
 
  .navigation-list a {
     color: #000000;
@@ -65,12 +67,18 @@ body {
     margin: 0 auto;
  }
 
+ .description-main {
+    min-height: 216px;
+ }
+
  .description-main h2 {
-    display: inline-flex;
     font-size: 21px;
     font-weight: bold;
     line-height: 26px;
     text-align: center;
+    display: block;
+    width: 440px;
+    margin: 0 auto 27px;
     color: #000000;
  }
 
@@ -85,7 +93,7 @@ body {
  }
 
  .description {
-    display: inline-flex;
+    display: flex;
     background-color:  #81b3de;
  }
  .description .description-info {
@@ -165,6 +173,7 @@ body {
     text-align: center;
     min-height: 256px;
     padding: 0;
+    background-color: #eeeeee;
  }
 
  .advantage-description-5,
@@ -203,25 +212,65 @@ body {
 
  .search-button {
     width: 568px;
-    height: 86px;
+    font-size: 21px;
+    line-height: 26 px;
+    letter-spacing: normal;
+    font-stretch: normal; 
+    font-style: normal;
+    font-weight: bold; 
+    text-align: center;
+    color: #ffffff;
     background-color: #766357;
-    width: 289px;
-    height: 18px;
+ }
+
+  .search-button:focus,
+  .search-button:hover {
+    background-color:  #604e43;
+  }
+
+  .search-form label {
+     height: 12px;
+     font-weight: bold;
+     font-style: normal;
+     text-align: left;
+  }
+
+ .search-form input{
+    box-sizing: border-box;
+    padding: 11px 40px 11px 14px;
+    font-size: 14px;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    background-color: #f2f2f2;
+ }
+ 
+ .search-form button {
+    width: 38px;
+    height: 38px;
+    background-color: #f2f2f2;
+ }
+
+ .search-form button[type=submit] {
+    width: 458px;
+    height: 58px;
     font-size: 21px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26 px;
+    line-height: 1.24;
     letter-spacing: normal;
     text-align: center;
     color: #ffffff;
+    background-color: #81b3d2;
  }
 
-  .search-button :focus,
-  .search-button :hover {
-    background-color:  #604e43;
-  }
- 
+ .search-form button[type=submit]:focus,
+ .search-form button[type=submit]:hover {
+    background-color: #669ec0;
+ }
+
  .map {
     width: 1200px;
     height: 593px;
@@ -233,7 +282,7 @@ body {
     width: 1200px;
     background-color: #ffffff;
  }
-
+ 
  .page-footer a{
     color: #000000;
  }
