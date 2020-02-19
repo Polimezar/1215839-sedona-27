@@ -12,13 +12,13 @@
      <header class="header">
        <nav class="navigation">
          <a class="header-logo">
-           <img src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
+           <img class="logo" src="img/logo-sedona.svg" width="138" height="70" alt="Седона">
          </a>
          <ul class="navigation-list">
-           <li><a href="#">Информация</a></li>
-           <li><a href="#">Фото и видео</a></li>
-           <li><a href="#">Карта штата</a></li>
-           <li><a href="catalog.html">Гостиницы</a></li>
+           <li class="nav-back"><a href="#">Информация</a></li>
+           <li class="nav-back"><a href="#">Фото и видео</a></li>
+           <li class="nav-back"><a href="#">Карта штата</a></li>
+           <li class="nav-back"><a href="catalog.html">Гостиницы</a></li>
          </ul>
        </nav>
      </header>
@@ -33,12 +33,12 @@
         <section class="description">
           <div class="description-info">
            <h2>настоящий<br> городок</h2>
-           <span>№1</span>
+           <span>- №1 -</span>
            <p>Седона-не аттракцион для туристов,<br>
            там течет своя жизнь</p>
          </div>
           <div class="descrition-picture-1">
-            <img src="img/feature-picture-1.jpg" width="800px" height="256px" alt="Седона" class="picture-1" >
+            <img src="img/feature-picture-1.jpg" width="816px" height="256px" alt="Седона" class="picture-1" >
           </div>
         </section>
         <section class="description-2">
@@ -64,29 +64,28 @@
          </div>
          <div class="advantage-description-4">
            <h2>там есть<br>мост дъявола</h2>
-           <span>№2</span>
-           <p>да, по нему можно пройтись! если конечно вы<br>
-           осмелитесь</p>
+           <span>- №2 -</span>
+           <p>да, по нему можно пройтись! если конечно<br>вы осмелитесь</p>
           </div>
         </section>
         <section class="description-4">
          <div class="advantage-description-5">
            <h2>небольшая<br>
            площадь</h2>
-           <span>№3</span>
+           <span>- №3 -</span>
            <p>Все достопримечательности<br> 
-           находтся очень близко</p>
+           находятся очень близко</p>
           </div>
           <div class="advantage-description-6">
            <h2>красивая<br>
            дорога</h2>
-           <span>№4</span>
+           <span>- №4 -</span>
            <p> ехать в седону из лас-вегаса совсем <br>
            не скучно</p>
          </div>
          <div class="advantage-description-7">
            <h2>мало<br>туристов</h2>
-           <span>№5</span>
+           <span>- №5 -</span>
            <p> большинство едет в гранд-каньон и<br>
            толпится там</p>
          </div>
@@ -96,45 +95,45 @@
           <p>Укажите предпологаемые даты поездки,<br>
           и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <a class="search-button" href="form.html">Поиск гостиницы в седоне</a>
-          <div class="search-form" >
-            <fieldset>
-             <form class="search-form-invisible" method="POST" action="#">
-               <label for="date-of-entry">Дата заезда:</label>
-               <input type="text" id="date-of-entry" name="date-of-entry" value="24 апреля 2017"> <br>
-               <label for="date-of-departure">Дата выезда:</label>
-               <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017"><br>
-               <label for="amount-of-adults">Взрослые:</label>
-               <button type="button" name="plus-adult">+</button>
-               <input type="text1" id="amount-of-adults" name="amount-of-adults" value="2">
-               <button type="button" name="minus-adult">-</button><br>
-               <label for="amount-of-children ">Дети:</label>
-               <button type="button" name="plus-children">+</button>
-               <input type="text1" id="amount-of-children" name="amount-of-children" value="0"> 
-               <button type="button" name="minus-children">-</button><br>
-               <button type="submit" name="Найти">Найти</button>
-             </form>
-          </fieldset>
-          </div>
         </section>
-        <section >
+        <div class="search-map">
+          <div class="search-form" >
+           <fieldset>
+              <form class="search-form-invisible" method="POST" action="#">
+                <label for="date-of-entry">Дата заезда:</label>
+                <input type="text" id="date-of-entry" name="date-of-entry" value="24 апреля 2017"> <br>
+                <label for="date-of-departure">Дата выезда:</label>
+                <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017"><br>
+                <label for="amount-of-adults">Взрослые:</label>
+                <input type="button" name="plus-adult" name="+"></button>
+                <input type="text1" id="amount-of-adults" name="amount-of-adults" value="2">
+                <input type="button" name="minus-adult" name="-"></button><br>
+                <label for="amount-of-children ">Дети:</label>
+                <input type="button" name="plus-children" name="+"></button>
+                <input type="text1" id="amount-of-children" name="amount-of-children" value="0"> 
+                <input type="button" name="minus-children" name="-"></button><br>
+                <button type="submit" name="Найти">Найти</button>
+              </form>
+           </fieldset>
+         </div>
          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d564474.505247366!2d-112.00279115033129!3d34.87271362170046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1462035967330"
           allowfullscreen></iframe>
-        </section>
-      </main>
-       <footer class="page-footer">
-         <div class="communication">
-           <p class="hashtag">#Visitsedona</p>
-           <a class="numder" href="#">тел:+7(495)666-02-66</a>
-        </div> 
-       <ul class="socials">
-         <a href="#"> <img src="img/twitter.svg" width="17" height="15" alt="" /> Твиттер</a>
-         <a href="#"> <img src="img/fb-icon.svg" width="12" height="22"  alt=""/> Фейсбук</a>
-         <a href="#"> <img src="img/youtube.svg" width="20" height="16" alt=""/> Ютуб</a>
-       </ul>
-       <div class="developers">
-       <span>website by<a href="https://htmlacademy.ru"> <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""/> </a></span>
-       </div>
-     </footer>
+         <footer class="page-footer">
+           <div class="communication">
+             <p class="hashtag">#Visitsedona</p>
+             <a class="numder" href="#">тел:+7(495)666-02-66</a>
+           </div> 
+           <ul class="socials">
+             <a href="#" class="social-btn social-btn--tw "></a>
+             <a href="#" class="social-btn social-btn--fb"></a>
+             <a href="#" class="social-btn social-btn--yt"></a>
+           </ul>
+           <div class="developers">
+             <span>website by<a href="https://htmlacademy.ru"> <img src="img/logo-htmlacademy.svg" width="115" height="41" alt=""> </a></span>
+           </div>
+         </footer>
+        </div>
+     </main>
     </div>
   </body>
  </html>
