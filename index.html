@@ -106,19 +106,21 @@
                  <label for="date-of-departure">Дата выезда:</label>
                  <input type="text" id="date-of-departure" name="date-of-departure" value="4 июля 2017">
                </p>
-               <p class="amount-container">
-                 <label for="amount-of-adults" class="adults">Взрослые:</label>
-                 <input type="button" name="plus-adult" class="search-hotel__form " value="-">
-                 <input type="text" id="amount-of-adults" name="amount-of-adults" value="2">
-                 <input type="button" name="minus-adult" class="search-hotel__form " value="+">
-               </p>
-               <p class="amount-container">
-                 <label for="amount-of-children" class="children">Дети:</label>
-                 <input type="button" name="plus-children" class="search-hotel__form " value="-">
-                 <input type="text" id="amount-of-children" name="amount-of-children" value="0"> 
-                 <input type="button" name="minus-children" class="search-hotel__form more button" value="+">
-                </p>
-               <input type="submit" name="Найти">Найти</input>
+               <div class="amount">
+                 <p class="amount-container">
+                   <label for="amount-of-adults" class="adults">Взрослые:</label>
+                   <input type="button" name="plus-adult" class="search-hotel__form " value="-">
+                   <input type="text" id="amount-of-adults" name="amount-of-adults" value="2">
+                   <input type="button" name="minus-adult" class="search-hotel__form " value="+">
+                 </p>
+                 <p class="amount-container">
+                   <label for="amount-of-children" class="children">Дети:</label>
+                   <input type="button" name="plus-children" class="search-hotel__form " value="-">
+                   <input type="text" id="amount-of-children" name="amount-of-children" value="0"> 
+                   <input type="button" name="minus-children" class="search-hotel__form more button" value="+">
+                 </p>
+               </div> 
+               <button class="button btn" type="submit" name="Найти">Найти</button>
              </form>
            </fieldset>
          </div>
