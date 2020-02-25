@@ -31,12 +31,12 @@ body {
 
  .nav-back {
     width: 239px;
-    height: 56px;
  }
 
  .navigation-list {
     list-style: none;
     display: flex;
+    padding: 0;
  }
 
  .navigation-list li:nth-child(1) {
@@ -85,7 +85,7 @@ body {
  .welcome-block {
     display: block;
     position: relative;
-    height: 508px;
+    min-height: 508px;
     background-color: #6c7780;
     background-image: url(../img/background-photo.jpg);
     background-position: center 28%;
@@ -108,6 +108,7 @@ body {
 
  .description-main {
     min-height: 216px;
+    padding-top: 60px;
  }
 
  .description-main h2 {
@@ -118,7 +119,7 @@ body {
     display: block;
     width: 440px;
     margin: 0 auto 27px;
-    padding-top: 59px;
+    padding-top: 0;
     color: #000000;
  }
 
@@ -126,11 +127,12 @@ body {
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
-    line-height: 26 px;
+    line-height: 26px;
     letter-spacing: normal;
     text-align: center;
     color: #333333;
-    padding-bottom: 56px;
+    margin: 0;
+    padding: 0;
  }
 
  .description {
@@ -470,35 +472,36 @@ body {
  .socials,
  .developers {
     width: 400px;
-    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
  }
+ 
 
  .communication {
-    display: flex;
     flex-direction: column;
     font-size: 21px;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 21 px;
-    letter-spacing: normal;
+    line-height: 21px;
  }
+ 
 
  .hashtag {   
-    width: 136px;
     height: 16px;
+    padding-left: 132px;
+    padding-bottom: 16px;
+    margin: 0;
  }
 
- .number {
-    width: 223px;
+ .numder {
+    padding-left: 132px;
  }
 
  .social-btn {
-    display: inline-block;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
-    margin-left: 6px;
+    margin-right: 6px;
  }
 
  .social-btn--tw::before { 
@@ -540,24 +543,21 @@ body {
  }
 
  .developers {
-    display: flex;
-    position: relative;
-    width: 74px;
-    height: 11px;
-    font-style: normal;
-    line-height: 26px;
     font-weight: 400;
-    padding-right: 224px;
+    align-items: center;
  }
 
- .developers a {
-    position: absolute;
-    right: 101px;
+ .developers p {
+    height: 11px;
+    margin: 0;
+    padding-right: 8px;
+    padding-bottom: 15px;
  }
 
  .developers a:hover,
  .developers a:focus {
-    color: #81b3d2;
+    color: #81b3d2;    
+    
  }
 
  .container .filter-hotels {
