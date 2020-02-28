@@ -67,7 +67,7 @@ body {
  }
 
  .navigation-list a:active {
-    color: #a9a9a9
+    color: #766357
  }
  
  .header-logo {
@@ -364,6 +364,7 @@ body {
  }
  
  .date-container input {
+    width: 346px;
     box-sizing: border-box;
     padding: 11px 40px 11px 14px;
     font-size: 14px;
@@ -374,6 +375,35 @@ body {
     background-color: #f2f2f2;
  }
  
+ .date-container .calendar-btn {
+    position: absolute;
+    width: 21px;
+    height: 22px;
+    margin: 0;
+    right: 20px;
+    background-color: #f2f2f2;
+ }
+
+ .date-container .calendar:hover{
+    fill: #000000;
+ }
+
+ .date-container .calendar:focus {
+    fill: #81b3d2;
+ }
+
+ .date-container input:hover{
+    background-color: #ebebeb;
+ }
+
+ .date-container input:focus {
+    background-color: #ffffff;
+ }
+
+ .date-container input{
+    border: inside 2px #e5e5e5;
+ }
+
  .search-form .amount{
     display: flex;
  }
@@ -445,6 +475,19 @@ body {
     color: #a9a9a9;
  }
 
+ .search-form .search-hotel__form:hover,
+ .search-form .search-hotel__form:focus{
+    color: #000;
+ }
+
+ .search-form button:hover {
+    background-color: #669ec0;
+ }
+
+ .search-form button {
+    background-color: #5496bd;
+ }
+
  .search-map {
     position: absolute;
  }
@@ -484,13 +527,11 @@ body {
     padding: 0;
  }
  
-
  .communication {
     flex-direction: column;
     font-size: 21px;
     line-height: 21px;
  }
- 
 
  .hashtag {   
     height: 16px;
@@ -560,9 +601,12 @@ body {
     padding-bottom: 15px;
  }
 
- .developers path:hover,
- .developers path:focus {
+ .developers path:hover {
     fill: #81b3d2;    
+ }
+
+ .developers path:focus {
+    fill: #bdbbbc;
  }
 
  .container .filter-hotels {
