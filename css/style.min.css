@@ -113,8 +113,8 @@ body {
  }
 
  .description-main {
-    min-height: 216px;
     padding-top: 60px;
+    padding-bottom: 50px;
  }
 
  .description-main h2 {
@@ -125,16 +125,14 @@ body {
     display: block;
     width: 440px;
     margin: 0 auto 27px;
+   
     padding-top: 0;
     color: #000000;
  }
 
  .description-main p {
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 26px;
-    letter-spacing: normal;
     text-align: center;
     color: #333333;
     margin: 0;
@@ -149,12 +147,8 @@ body {
 
  .description-info {
     width: 280px;
-    height: 146px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 21px;
-    letter-spacing: normal;
     text-align: center;;
     color: #ffffff; 
     padding: 46px 60px 64px;
@@ -243,10 +237,7 @@ body {
 
  .description-2 p {
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 21 px;
-    letter-spacing: normal;
+    line-height: 21px;
     text-align: center;
     color: #333333;
  }
@@ -257,11 +248,9 @@ body {
  } 
 
  .description-3 .advantage-description-4 {
+    width: 303px;
     font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
     line-height: 21px;
-    letter-spacing: normal;
     text-align: center;
     color: #ffffff;
     padding: 49px 49px 65px 48px;
@@ -272,7 +261,13 @@ body {
     display: inline-flex;  
  }
 
+ .description-info h2,
+ .advantage-description-4 h2 {
+    margin-top: 0;
+ }
+
  .description-4 {
+    min-height: 256px;
     display: flex;
     text-align: center;
     padding: 0;
@@ -283,14 +278,16 @@ body {
  .advantage-description-6,
  .advantage-description-7 {
     width: 400px;
-    min-height: 256px;
     font-weight: normal;
     font-stretch: normal;
-    font-style: normal;
-    line-height: 21 px;
-    letter-spacing: normal;
+    line-height: 21px;
     text-align: center;
-    color: #333333; 
+    color: #333333;  }
+
+ .advantage-description-5 h2,
+ .advantage-description-6 h2,
+ .advantage-description-7 h2 {
+    margin-top: 0;
     padding-top: 50px;
  }
 
@@ -312,20 +309,21 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
+    padding-top: 57px;
+    margin: 0;
  }
 
  .search-button {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: 568px;
     padding-top: 30px;
     padding-bottom: 30px;
-    text-decoration: none;
     font-size: 21px;
-    font-weight: bold;
-    text-align: center;
     color: #fff;
     background-color: #766357;
     margin-left: 316px;
+    margin-top: 52px;
  }
 
   .search-button:focus,
@@ -400,8 +398,8 @@ body {
     background-color: #ffffff;
  }
 
- .date-container input{
-    border: inside 2px #e5e5e5;
+ .date-container input:focus{
+    border: solid 2px #e5e5e5; 
  }
 
  .search-form .amount{
@@ -948,6 +946,15 @@ body {
     margin: 0;
     padding-top: 30px;
  }
+
+ .result-list .title{
+    color: #000000;
+ }
+
+ .result-list .title:hover {
+    color: #81b3d2;
+ }
+
 
  .description-of-result .info,
  .description-of-result-2 .info,
