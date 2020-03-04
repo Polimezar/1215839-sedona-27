@@ -485,11 +485,11 @@ body {
     color: #000;
  }
 
- .search-form button:hover {
+ .search-form .btn:hover {
     background-color: #669ec0;
  }
 
- .search-form button {
+ .search-form .btn:focus {
     background-color: #5496bd;
  }
 
@@ -557,7 +557,6 @@ body {
  }
 
  .socials li {
-    display: inline-block;
     width: 46px;
     height: 48px;
     margin-right: 6px;
@@ -580,6 +579,11 @@ body {
     background: #669ec0;
  }
 
+ .socials a{
+    display: block;
+    height: 48px;
+ }
+ 
  .socials a:focus {
     background: #5496bd;
  }
@@ -670,6 +674,7 @@ body {
  .housing input {
     width: 1px;
     height: 1px;
+    display: none;
  }
 
  .filter input[type=checkbox]:checked+.checkbox-indicator {
