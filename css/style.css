@@ -338,6 +338,7 @@ body {
     position: absolute;
     left: 50%;
     z-index: 1;
+    display: none;
     padding: 55px;
     width: 568px;
     height: 398px;
@@ -346,9 +347,32 @@ body {
     background-color: #fff;
     box-shadow: 0 7px 15px 0 rgba(0,1,1,.15); 
  }
-
+ 
  .search-form fieldset{
     border: none;
+ }
+
+ .form-hide {
+    display: block;
+    animation: bounce 0.6s;
+ }
+
+ @keyframes bounce {
+   0% {
+     transform: translateY(-2000px);
+   }
+ 
+   70% {
+     transform: translateY(30px);
+   }
+ 
+   90% {
+     transform: translateY(-10px);
+   }
+ 
+   100% {
+     transform: translateY(0);
+   }
  }
 
  .search-form .date-container{
