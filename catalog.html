@@ -5,7 +5,7 @@
    <title>HTML Academy: Седона</title>
    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/normalize.min.css">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/style.min.css">
  </head>
  <body>
    <div class="container">
@@ -18,12 +18,12 @@
            <li class="nav-back"><a href="#">Информация</a></li>
            <li class="nav-back"><a href="#">Фото и видео</a></li>
            <li class="nav-back"><a href="#">Карта штата</a></li>
-           <li class="nav-back"><a href="catalog.html">Гостиницы</a></li>
+           <li class="nav-back nav-current"><a href="catalog.html">Гостиницы</a></li>
          </ul>
        </nav>
      </header>
      <section class="filter-hotels">
-       <form class="filter" method="get" action="#">
+       <form class="filter" method="GET" action="#">
            <fieldset class="infrastructure">
              <legend>инфраструктура:</legend>
              <label class="pool" for="filter-pool"> 
@@ -88,12 +88,12 @@
          </ul>
        </div>
        <div class="icon">
-         <a class="icon-up-dir" type="button" name="icon-up-dir">
+         <a class="icon-up-dir" type="button" name="icon-up-dir" href="#">
            <svg  xmlns="http://www.w3.org/2000/svg" class="up" width="11" height="10" viewBox="0 0 11 10">
            <path  d="M5.5 0L0 10h11z"/>
            </svg>
          </a> 
-         <a class="icon-down-dir" type="button" name="icon-down-dir">
+         <a class="icon-down-dir" type="button" name="icon-down-dir" href="#">
            <svg xmlns="http://www.w3.org/2000/svg" class="down" width="11" height="10" viewBox="0 0 11 10">
            <path  d="M5.5 10L0 0h11"/>
           </svg>

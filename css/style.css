@@ -63,12 +63,15 @@ body {
     color: #000000;
  }
 
- .navigation-list a:hover,
- .navigation-list a:focus {
+ .navigation-list a:hover {
     color: #81b3d2;
  }
 
- .navigation-list a:active {
+ .navigation-list a:focus {
+    color: rgba(0, 0, 0, 0.3);
+ } 
+
+ .nav-current a:visited {
     color: #766357
  }
  
@@ -329,10 +332,14 @@ body {
     margin-top: 52px;
  }
 
-  .search-button:focus,
-  .search-button:hover {
+  
+ .search-button:hover {
     background-color:  #604e43;
-  }
+ }
+
+ .search-button:focus {
+    background-color: #503e33;
+ }
 
  .search-form {
     position: absolute;
@@ -354,25 +361,34 @@ body {
 
  .form-hide {
     display: block;
-    animation: bounce 0.6s;
+    animation-name: emergence;
+    animation-duration: 0.5s;
  }
 
- @keyframes bounce {
-   0% {
-     transform: translateY(-2000px);
-   }
+ @keyframes  emergence {
+   0% {transform: scaleY(0) translateX(-50%);}
+   
+   100% {transform: scaleY(1) translateX(-50%);}
+ }
+
+ .form-error {
+    animation: shake 0.6s;
+ }
+
+ @keyframes shake {
+   0%,
+   100% {transform: translateX(0);}
  
-   70% {
-     transform: translateY(30px);
-   }
+   10%,
+   30%,
+   50%,
+   70%,
+   90% {transform: translateX(-10px);}
  
-   90% {
-     transform: translateY(-10px);
-   }
- 
-   100% {
-     transform: translateY(0);
-   }
+   20%,
+   40%,
+   60%,
+   80% {transform: translateX(10px);}
  }
 
  .search-form .date-container{
@@ -419,6 +435,7 @@ body {
 
  .date-container .calendar:focus {
     fill: #81b3d2;
+    
  }
 
  .date-container input:hover {
@@ -504,9 +521,12 @@ body {
     color: #a9a9a9;
  }
 
- .search-form .search-hotel__form:hover,
- .search-form .search-hotel__form:focus {
+ .search-form .search-hotel__form:hover {
     color: #000;
+ }
+
+ .search-form .search-hotel__form:focus {
+    color: #5496bd;
  }
 
  .search-form .btn:hover {
@@ -670,11 +690,13 @@ body {
  .filter .infrastructure {
     margin-left: 72px;
     display: flex;
+    flex-direction: column;
  }
   
  .filter .housing {
     margin-left: 115px;
     display: flex;
+    flex-direction: column;
  }
 
  .filter .filter-range {
@@ -690,7 +712,7 @@ body {
     font-weight: normal;
     color: #ffffff;
     position: relative;
-    padding-bottom: 23px;
+    margin-bottom: 23px;
     padding-left: 35px;
  }
 
@@ -771,6 +793,7 @@ body {
     font: inherit;
     background: none;
     border: none;
+    -moz-appearance: textfield;
  }
  
  .range-controls {
@@ -899,11 +922,15 @@ body {
     border-bottom: dashed 1px;
  }
 
- .sorting .type:focus,
+ 
  .sorting .type:hover,
- .sorting .rating:focus,
  .sorting .rating:hover {
     color: #81b3d2;
+ }
+
+ .sorting .type:focus,
+ .sorting .rating:focus {
+    color: #000;
  }
 
  .result-list li,
@@ -925,13 +952,17 @@ body {
     fill: #cacaca;
  }
 
- .icon .up:hover {
-    fill: #000000;
+ .icon .up:focus {
+    fill: #81b3d2;
  }
 
  .icon .down {
     fill: #81b3d2;
  }
+
+ .icon .up:hover {
+    fill: black;
+ } 
 
  .description-of-result,
  .description-of-result-2,
@@ -972,6 +1003,10 @@ body {
 
  .result-list .title:hover {
     color: #81b3d2;
+ }
+
+ .result-list .title:focus{
+    color: rgba(0, 0, 0, 0.3);
  }
 
  .description-of-result .info,
@@ -1030,14 +1065,20 @@ body {
     color: #ffffff;
  }
 
- .button-more:focus ,
  .button-more:hover {
     background-color: #669ec0;
  }
 
- .button-book:focus,
+ .button-more:focus {
+    background-color: #5496bd;
+ }
+
  .button-book:hover {
     background-color: #604e43;
+ }
+
+ .button-book:focus {
+    background-color: #503e33;
  }
 
  .result-list .rating {
@@ -1058,4 +1099,3 @@ body {
     padding-top: 29px;
     padding-bottom: 47px;
  } 
- 
