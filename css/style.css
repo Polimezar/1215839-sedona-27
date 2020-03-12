@@ -51,7 +51,7 @@ body {
 
  .navigation-list li:nth-child(3) {
     text-align: right;
-    margin-left: 92px;
+    margin-left: 97px;
  }
 
  .navigation-list li:nth-child(4) {
@@ -159,7 +159,7 @@ body {
     padding: 46px 60px 64px;
  }
 
- .discription-picture-1 .picture-1 {
+ .discription-picture-1 .picture-1{
     object-fit: contain;
     display: inline-flex;
  }
@@ -190,7 +190,7 @@ body {
     width: 75px;
     height: 72px;
     position: absolute;
-    top: 56px;
+    top: 60px;
     left: 0;
     right: 0;
     display: block;
@@ -206,7 +206,7 @@ body {
     width: 74px;
     height: 70px;
     position: absolute;
-    top: 56px;
+    top: 62px;
     left: 0;
     right: 0;
     display: block;
@@ -237,7 +237,7 @@ body {
     font-size: 21px;
     line-height: 21px;
     text-align: center;
-    margin: 0 0 20px;
+    margin: 0 0 26px;
  }
 
  .description-2 p {
@@ -269,6 +269,15 @@ body {
  .description-info h2,
  .advantage-description-4 h2 {
     margin-top: 0;
+    margin-bottom: 25px;
+ }
+
+ .description-info p{
+    margin-top: 20px;
+ }
+
+ .advantage-description-4 p {
+    margin-top: 19px;
  }
 
  .description-4 {
@@ -294,6 +303,13 @@ body {
  .advantage-description-7 h2 {
     margin-top: 0;
     padding-top: 50px;
+    margin-bottom: 23px;
+ }
+
+ .advantage-description-5 p,
+ .advantage-description-6 p,
+ .advantage-description-7 p{
+    margin-top: 21px;
  }
 
  .search-hotel {
@@ -302,6 +318,7 @@ body {
  }
 
  .search-hotel .text {
+    margin-top: 25px;
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -315,7 +332,7 @@ body {
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
-    padding-top: 57px;
+    padding-top: 52px;
     margin: 0;
  }
 
@@ -329,10 +346,9 @@ body {
     color: #fff;
     background-color: #766357;
     margin-left: 316px;
-    margin-top: 52px;
+    margin-top: 48px;
  }
 
-  
  .search-button:hover {
     background-color:  #604e43;
  }
@@ -357,6 +373,8 @@ body {
  
  .search-form fieldset{
     border: none;
+    padding: 0;
+    margin: 0;
  }
 
  .form-hide {
@@ -395,12 +413,11 @@ body {
     position: relative;
     display: flex;
     align-items: center;
-    margin: 0 0 30px;
+    margin: 0 0 28px;
  }
 
  .date-container label {
     width: 112px;
-    letter-spacing: .4px;
     font-weight: bold;
  }
  
@@ -425,7 +442,9 @@ body {
     width: 21px;
     height: 22px;
     margin: 0;
+    padding-left: 10px;
     right: 20px;
+    bottom: 10px;
     background: 0 0;
  }
 
@@ -450,6 +469,7 @@ body {
 
  .search-form .amount {
     display: flex;
+    position: absolute;
  }
 
  .amount-container {
@@ -478,8 +498,10 @@ body {
  
  .amount-container input[type=text] {
     width: 38px;
+    min-height: 38px;
     padding: 10px 5px;
     text-align: center;
+    
  }
  
  .amount-container input[type=text] {
@@ -494,15 +516,14 @@ body {
  }
 
  .amount-container .children {
-    margin-right: 26px;
-    margin-left: 48px;
+    margin-right: 25px;
+    margin-left: 54px;
  }
 
  .search-form button {
-    position: relative;
     width: 458px;
     height: 58px;
-    margin-top: 54px;
+    margin-top: 78px;
     border: none;
     background-color: #81b3d2;
  }
@@ -510,6 +531,7 @@ body {
   .search-form .btn  {
     font-size: 21px;
     font-weight: bold;
+    text-transform: uppercase;
     color: #ffffff;
  }
 
@@ -573,6 +595,10 @@ body {
     color: #000000;
  }
 
+ .developers a {
+    margin-top: 10px;
+ }
+
  .communication,
  .socials,
  .developers {
@@ -591,13 +617,13 @@ body {
 
  .hashtag {   
     height: 16px;
-    padding-left: 132px;
+    padding-left: 124px;
     padding-bottom: 16px;
     margin: 0;
  }
 
- .numder {
-    padding-left: 132px;
+ .number {
+    padding-left: 125px;
  }
 
  .socials li {
@@ -661,6 +687,7 @@ body {
 
  .filter {
     display: flex;
+    min-height: 217px;
  }
 
  .filter legend {
@@ -684,14 +711,14 @@ body {
     padding: 0;
     margin: 0;
     border: none;
-    margin-top: 31px;
+    margin-top: 27px;
  }
 
  .filter .infrastructure {
     margin-left: 72px;
     display: flex;
     flex-direction: column;
- }
+}
   
  .filter .housing {
     margin-left: 115px;
@@ -709,12 +736,22 @@ body {
 
  .infrastructure label,
  .housing label {
+    display: block;
     font-weight: normal;
     color: #ffffff;
     position: relative;
-    margin-bottom: 23px;
-    padding-left: 35px;
+    margin-bottom: 22px;
+    padding-left: 39px;
  }
+
+ .housing label {
+   display: block;
+   font-weight: normal;
+   color: #ffffff;
+   position: relative;
+   margin-bottom: 22px;
+   padding-left: 42px;
+}
 
  .infrastructure input,
  .housing input {
@@ -754,7 +791,8 @@ body {
  
  .price-controls {
     position: relative;
-    height: 36px;
+    width: 313px;
+    height: 33px;
     margin-bottom: 20px;
     font-size: 0;
     border: 2px solid #ffffff;
@@ -790,7 +828,6 @@ body {
     width: 50px;
     margin: 0;
     color: inherit;
-    font: inherit;
     background: none;
     border: none;
     -moz-appearance: textfield;
@@ -844,8 +881,10 @@ body {
  
  .btn-transparent {
     display: block;
+    width: 139px;
     margin: 0 auto;
     padding: 6px 35px;
+    margin-right: 96px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
@@ -860,7 +899,6 @@ body {
     color: #000000;
     background: #ffffff;
  }
- 
 
  .search-results {
     align-items: center;
@@ -879,7 +917,7 @@ body {
 
  .sorting span {
    position: absolute;
-   padding-left: 49px;
+   padding-left: 48px;
    padding-top: 36px; 
  }
 
@@ -898,7 +936,7 @@ body {
  
  .sorting ul {
     display: flex;
-    margin-left: 120px;
+    margin-left: 121px;
     margin-top: 36px;
  }
 
@@ -908,7 +946,6 @@ body {
 
  .sorting .rating,
  .sorting .type {
-    opacity: 0.3;
     color: #cacaca;
  }
 
@@ -922,7 +959,6 @@ body {
     border-bottom: dashed 1px;
  }
 
- 
  .sorting .type:hover,
  .sorting .rating:hover {
     color: #81b3d2;
@@ -967,7 +1003,7 @@ body {
  .description-of-result,
  .description-of-result-2,
  .description-of-result-3 {
-    width: 786px;
+    width: 781px;
  }
 
  .picture-of-the-result {
@@ -1047,7 +1083,7 @@ body {
  }
 
  .button-more {
-    margin-right: 6px;
+    margin-right: 4px;
     background-color: #81b3d2;
  }
 
@@ -1097,5 +1133,14 @@ body {
 
  .rating-of-stars {
     padding-top: 29px;
-    padding-bottom: 47px;
+    padding-bottom: 40px;
+    padding-right: 2px;
  } 
+
+ .rating-of-stars img:nth-child(1){
+    padding-right: 2px;
+ }
+
+ .rating-of-stars .stars {
+    padding-right: 4px;
+ }
