@@ -385,12 +385,6 @@ body {
     transform: translateX(-50%);
  }
 
- .search-form fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
- }
-
  .form-hide {
     display: block;
     animation-name: emergence;
@@ -458,6 +452,7 @@ body {
 
  .date-container .calendar:focus {
     fill: #81b3d2;
+    border: none;
     
  }
 
@@ -836,6 +831,7 @@ body {
     background: none;
     border: none;
     -moz-appearance: textfield;
+    appearance: textfield;
  }
  
  .range-controls {
@@ -869,6 +865,7 @@ body {
  .price-controls input::-webkit-outer-spin-button,
  .price-controls input::-webkit-inner-spin-button {
     -webkit-appearance: none;
+    appearance: none;
     margin: 0; 
  }
 
