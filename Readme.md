@@ -1,3 +1,6 @@
+Публикации проекта на GitHub Pages
+https://polimezar.github.io/1215839-sedona-27/
+
 # Личный проект «Седона»
 
 * Студент: [Валентина Бобух](https://up.htmlacademy.ru/htmlcss/27/user/1215839).
